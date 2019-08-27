@@ -24,13 +24,29 @@
       { id: 'test' },
       [
         createElement('p', { key: 'a', style: { color: 'blue' } }, '节点 1'),
-        createElement('p', { key: 'a', '@click': () => { alert('xxx') } }, '节点 2'),
-        createElement('p', { key: 'a', 'class': 'item-header' }, '节点 3'),
-        createElement('p', { key: 'a' }, '节点 4'),
+        createElement('p', { key: 'b', '@click': () => { alert('xxx') } }, '节点 2'),
+        createElement('p', { key: 'c', 'class': 'item-header' }, '节点 3'),
+        createElement('p', { key: 'd' }, '节点 4'),
+      ]
+    );
+    let vnode1 = createElement(
+      'div',
+      { id: 'test' },
+      [
+        createElement('p', { key: 'd' }, '节点 4'),
+        createElement('p', { key: 'a', style: { color: 'red' } }, '节点 1'),
+        createElement('p', { key: 'b' }, '节点 2'),
+        createElement('p', { key: 'e' }, '节点 5'),
+        createElement('p', { key: 'f', style: { color: 'green' } }, '节点 6'),
       ]
     );
     // console.log(JSON.stringify(div, null, 4));
     render(vnode, document.getElementById('app'));
+
+    setTimeout(() => {
+      render(vnode1, document.getElementById('app'));
+    }, 2000);
+
   </script>
 </body>
 
