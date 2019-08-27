@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 500px;
+      height: 500px;
+      background: gray;
+      /* 父元素相对定位 */
+      position: relative;
+    }
+
+    #wrap .box {
+      width: 200px;
+      background: deeppink;
+      /* 子元素可以不指定高度 */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* 
+          由于是子元素的左上角距离父元素的左上角 50%，
+          所以得把上下用 translate 拉回来 ，
+          translate是相对于自己的位置
+      */
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="box">1111</div>
+  </div>
+</body>
+
+</html>

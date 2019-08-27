@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 500px;
+      height: 500px;
+      background: gray;
+      /* 父元素相对定位 */
+      position: relative;
+    }
+
+    #wrap .box {
+      width: 200px;
+      background: deeppink;
+      /* 子元素必须指定高度 */
+      height: 200px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      /* 
+          由于是子元素的左上角距离父元素的左上角 50%，
+          所以得把上下用 margin 拉回来
+       */
+      margin-left: -100px;
+      margin-top: -100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>
