@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*水平居中*/
+        .wrapper {
+            margin: 0 auto;
+            width: 600px;
+        }
+
+        ul {
+            padding: 0;
+            border: 1px solid #dddddd;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        p {
+            margin: 0;
+            padding: 20px 20px;
+        }
+
+        /*标题*/
+        .title {
+            color: white;
+            padding: 20px;
+            margin: 0;
+            box-shadow: 16px 14px 12px #333333d1;
+        }
+
+        .red {
+            background: red;
+        }
+
+        .sad {
+            background: saddlebrown;
+        }
+
+        .dar {
+            background: darkgoldenrod;
+        }
+
+        .content {
+            /*cotent的默认高度为0*/
+            height: 0;
+            /*给高度设置动画，持续时间为1s*/
+            transition: height 1s;
+            /*每个区域超出部分隐藏*/
+            overflow: hidden;
+            box-shadow: 4px 4px 4px #ccc;
+        }
+
+        .box1, .box2, .box3 {
+            outline: none;
+        }
+
+        /*当获得焦点的时候，content高度变成200px，超出部分滚动*/
+        .box1:focus > .content,
+        .box2:focus > .content,
+        .box3:focus > .content {
+            overflow: scroll;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <ul>
+        <li class="box1" tabindex="1">
+            <h3 class="title red">title1</h3>
+            <div class="content">
+                <p>this 1 p</p>
+                <p>this 2 p</p>
+                <p>this 3 p</p>
+                <p>this 4 p</p>
+                <p>this 5 p</p>
+            </div>
+        </li>
+        <li class="box2" tabindex="2">
+            <h3 class="title sad">title2</h3>
+            <div class="content">
+                <p>this is 1 p</p>
+                <p>this is 2 p</p>
+                <p>this is 3 p</p>
+                <p>this is 4 p</p>
+                <p>this is 5 p</p>
+                <p>this is 6 p</p>
+                <p>this is 7 p</p>
+                <p>this is 8 p</p>
+                <p>this is 9 p</p>
+                <p>this is 10 p</p>
+                <p>this is 11 p</p>
+                <p>this is 12 p</p>
+                <p>this is 13 p</p>
+                <p>this is 14 p</p>
+                <p>this is 15 p</p>
+                <p>this is 16 p</p>
+                <p>this is 17 p</p>
+                <p>this is 18 p</p>
+                <p>this is 19 p</p>
+                <p>this is 20 p</p>
+            </div>
+        </li>
+        <li class="box3" tabindex="3">
+            <h3 class="title dar">title3</h3>
+            <div class="content">
+                <p>this is 1 p</p>
+                <p>this is 2 p</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+dasd
+  <button id="btn">click</button>
+  <script src='./throttle.js'></script>
+  <script src='./../ajax/ajax.js'></script>
+  <script>
+    const btn = document.querySelector('#btn');
+    function getData() {
+      ajax.get('https://www.tianqiapi.com/api/?version=v1').then((res) => {
+        console.log(res);
+      });
+    }
+    btn.addEventListener('click', function() {
+      throttle(getData);
+    }, false);
+  </script>
+</body>
+
+</html>

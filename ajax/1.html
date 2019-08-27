@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script src="./ajax.js"></script>
+  <script>
+    ajax.get('https://www.tianqiapi.com/api/?version=v1').then((res) => {
+      console.log(res);
+    });
+    ajax.get('http://127.0.0.1:5500/ajax/a.json').then((res) => {
+      console.log(res);
+    });
+    let data = new FormData();
+    data.append('a', 1);
+    data.append('b', 2);
+    ajax({
+      url: 'http://127.0.0.1:5500/ajax/b.json',
+      method: 'get',
+      data
+    }).then((res) => {
+      console.log(res)
+    })
+    const url = 'https://www.baidu.com/sugrec?pre=1&p=3&ie=utf-8&json=1&prod=pc&from=pc_web&sugsid=29609,1454,21108,29073,29522,29518,29099,29568,28832,29221,26350&wd=json%E5%9C%A8%E7%BA%BF&bs=json%E5%9C%A8%E7%BA%BF%E6%B5%8B%E8%AF%95&csor=6&pwd=json%E5%9C%A8%E7%BA%BF%E6%B5%8B&_=1564834698324';
+    // function cb(res) {
+    //   console.log(res);
+    // }
+    ajax.jsonp({
+      url: url,
+      success: (res) => {
+        console.log(res)
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

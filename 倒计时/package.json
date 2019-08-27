@@ -1,0 +1,19 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify js/src/app.js -o js/dist/bundle.js",
+    "serve": "http-server -p 9090 ./",
+    "open:dev": "opener http://localhost:9090/index.html",
+    "livereload": "live-reload --port 9090 ./",
+    "start": "concurrently \"npm run serve\" \"npm run open:dev\""
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^16.3.0"
+  }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+<pre>
+    es6-babel-browserify使用教程
+1. 定义package.json文件
+2. 安装babel-cli (cli: command line interface), babel-preset-es2015和browserify
+    npm i -g babel-cli browserify
+    npm i babel-preset-es2015 --save-dev
+    preset 预设（将es6转换成es5的所有插件打包）
+3. 定义   .babelre文件
+    {
+      "presets": ["es2015"]
+    }
+4. 编码
+    js/src/module1.js 分别暴露
+5. 编译
+    使用Babel将es6编译为es5（但包含commonJs语法）：babel js/src -d js/lib
+    使用Browserify编译js：browserify js/lib/main.js -o js/lib/bundle.js
+</pre>
+<script src="./js/dist/bundle.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <p class="a">
+        a
+    </p>
+    <p class="a">
+        b
+    </p>
+    <span class="a">
+        c
+    </span>
+</div>
+<script>
+
+    (function (global, factory) {
+        factory(global);
+    }(this, function (window) {
+        var $,
+            methodAttributes = ['val', 'css', 'html', 'text', 'data', 'width', 'height', 'offset'],
+            class2type = {},
+            toString = class2type.toString,
+            jxd = {},
+            emptyArray = [],
+            isArray = Array.isArray || function (obj) {
+                return obj instanceof Array
+            };
+
+        //判断类型
+        function type(obj) {
+            return isArray(obj) ? 'Array' : String(typeof obj)
+        }
+
+        //判断是否是函数
+        function isFunction(value) {
+            return type(value) === "function"
+        }
+
+        function isWindow(obj) {
+            return obj != null && obj === obj.window
+        }
+
+        function isDocument(obj) {
+            console.log(obj);
+            console.log(obj.nodeType)
+            console.log(obj.DOCUMENT_NODE)
+            return obj != null && obj.nodeType === obj.DOCUMENT_NODE
+        }
+
+        function isObject(obj) {
+            return type(obj) === "object"
+        }
+
+        function isPlainObject(obj) {
+            return isObject(obj) && !isWindow(obj) && Object.getPrototypeOf(obj) === Object.prototype
+        }
+
+        jxd.init = function (selector, context) {
+            var arr;
+            if (selector.indexOf('#') > -1) {
+                arr = selector.split('#');
+                return document.getElementById(arr[1])
+            }
+            if (selector.indexOf('.') > -1) {
+                arr = selector.split('.');
+                return document.getElementsByClassName(arr[1])
+            }
+            if (selector.indexOf('.') < 0 && selector.indexOf('#') < 0) {
+                return document.getElementsByTagName(selector);
+            }
+        };
+
+        var Jxd = (function (selector, context) {
+
+            $ = function (selector, context) {
+                return jxd.init(selector, context)
+            };
+
+            $.type = type;
+            $.isFunction = isFunction;
+            $.isWindow = isWindow;
+            $.isArray = isArray;
+            $.isPlainObject = isPlainObject;
+            $.isObject = isObject;
+            $.isDocument = isDocument;
+
+            $.fn = {
+                constructor: jxd,
+                length: 0,
+
+                forEach: emptyArray.forEach,
+                reduce: emptyArray.reduce,
+                push: emptyArray.push,
+                sort: emptyArray.sort,
+                splice: emptyArray.splice,
+                indexOf: emptyArray.indexOf,
+
+            };
+
+            return $;
+        })();
+
+        window.$ = Jxd;
+        window.Jxd = Jxd;
+        return Jxd
+    }))
+
+</script>
+<script>
+    console.log($.isDocument($('.a')))
+</script>
+</body>
+
+</html>

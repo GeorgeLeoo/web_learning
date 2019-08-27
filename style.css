@@ -1,0 +1,13 @@
+html {
+    margin: 0;
+    padding: 10px;
+    background: rgb(40, 44, 53);
+    color: rgb(171, 178, 191);
+    font-size: 20px;
+    font-family: Ayuthaya, serif;
+    line-height: 1.8;
+}
+
+strong{
+    color: deeppink;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>2_数据代理</title>
+</head>
+
+<body>
+  <ol>
+    <li>数据代理：通过一个对象代理对另一个对象中的属性进行操作（读/写）</li>
+    <li>vue数据代理：通过vm对象代理对data对象中的属性</li>
+    <li>好处：方便操作data只能够的数据</li>
+    <li>
+      基本实现流程：
+      <ol>
+        <li>通过Object.definePrototype()给vm添加与data对象的属性对应的属性描述符</li>
+        <li>所有添加的属性都包含getter和setter</li>
+        <li>getter/setter内部去操作data中对应的属性数据</li>
+      </ol>
+    </li>
+  </ol>
+
+  <div class="#test"></div>
+
+  <script src="js/compile.js"></script>
+  <script src="js/observer.js"></script>
+  <script src="js/watcher.js"></script>
+  <script src="js/mvvm.js"></script>
+
+  <script>
+    const vm = new MVVM({
+      el: "#test",
+      data: {
+        name: "json"
+      }
+    })
+    console.log(vm.name, vm); // json vm代理对data数据的读操作
+    vm.name = "tom"; // vm代理对data数据的写操作
+    console.log(vm._data.name, vm.name);// tom
+  </script>
+</body>
+
+</html>

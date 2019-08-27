@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            border: 1px solid red;
+            margin: 0;
+            background: rgb(40, 44, 53);
+            color: rgb(171, 178, 191);
+            font-size: 20px;
+            font-family: Ayuthaya, serif;
+            line-height: 1.8;
+        }
+
+        body {
+            margin: 30px;
+            border: 1px solid;
+        }
+
+
+        span {
+            font-weight: bold;
+            color: deeppink;
+            font-style: italic;
+        }
+
+        .w {
+            color: white;
+        }
+
+        h3, h4, p {
+            padding-left: 80px;
+        }
+
+        .wrapper {
+            width: 200px;
+            height: 200px;
+            background: deeppink;
+            margin-left: 100px;
+            margin-bottom: 10px;
+            padding: 30px;
+        }
+
+        .box_static {
+            position: static;
+            width: 100px;
+            height: 100px;
+            background: deepskyblue;
+        }
+
+        .box_relative {
+            position: static;
+            width: 100px;
+            height: 100px;
+            background: deepskyblue;
+        }
+
+        .box_absolute {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: deepskyblue;
+        }
+
+        .box_fixed {
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            background: deepskyblue;
+            bottom: 0;
+        }
+
+        .inner {
+            padding: 30px;
+            background: green;
+            width: 100px;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>确定包含块</h2>
+<pre>
+    确定一个元素的包含块的过程完全依赖于这个元素的 position 属性：
+    1.  如果 position 属性为 static 或 relative ，包含块就是由它的<span>最近的父级块元素</span>（比如
+        说inline-block, block 或 list-item元素）或 <span>格式化上下文</span>(比如说 a table container,
+        flex container, grid container, or the block container itself)的
+        <span>内容区</span>的边缘组成的。
+</pre>
+
+<h4>static</h4>
+<p>wrapper都有padding:30px</p>
+<div class="wrapper">
+    <div class="box_static"><span class="w">static</span></div>
+</div>
+
+<h4>relative</h4>
+<div class="wrapper">
+    <div class="box_relative"><span class="w">relative</span></div>
+</div>
+<pre>
+    2.  如果 position 属性为 absolute ，包含块就是由它的 <span>最近的 position 的值
+        不是 static</span> （也就是值为fixed, absolute, relative 或 sticky）的<span>父级元素</span>的
+        <span>内边距</span>的边缘组成。
+</pre>
+<h4>absolute</h4>
+<div class="wrapper">
+    <div class="box_absolute"><span class="w">absolute</span></div>
+</div>
+<pre>
+    3.  如果 position 属性是 fixed，在连续媒体的情况下(continuous media)包含块是 viewport ,
+        在分页媒体(paged media)下的情况下包含块是分页区域(page area)。
+</pre>
+<h4>fixed</h4>
+<div class="wrapper">
+    <div class="inner">
+        <div class="box_fixed"><span class="w">fixed</span></div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "weatherinfo": {
+    "city": "北京",
+    "cityid": "101010100",
+    "temp": "10",
+    "WD": "东北 风",
+    "WS": "4 级",
+    "SD": "56%",
+    "WSE": "4",
+    "time": "16:40",
+    "isRadar": "1",
+    "Radar": "JC_RADAR_AZ9010_JB"
+  }
+}

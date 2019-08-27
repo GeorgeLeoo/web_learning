@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>html事件处理程序</title>
+</head>
+
+<body>
+  <input type="button" value="click me 1" onclick="alert('click 1')">
+  <input type="button" value="click me 2" onclick="msg.showMessage2()">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <input type="button" value="click me 3" onclick="console.log(this)">
+  <form action="a.php" name="login-form">
+    user<input name="user" type="text" value="">
+    pwd<input name="pwd" type="text" value="">
+    <input type="button" value="login" onclick="console.log(user.value)">
+  </form>
+  <input id="btn" type="button" value="click me 4">
+  <p id="p">this is a p tag <span>this is span tag in p tag</span></p>
+  <a id="baidu" href="http://www.baidu.com">百度</a>
+  <script>
+    let msg = (function () {
+      return {
+        showMessage1: function () {
+          alert('click 2-1');
+        },
+        showMessage2: function () {
+          alert('click 2-2');
+        },
+        handleBtnClick1: function (e) {
+          console.log('handleBtnClick1', e, e.currentTarget);
+        },
+        handleBtnClick2: function (e) {
+          console.log('handleBtnClick2');
+        }
+      }
+    })();
+
+    var btn = document.getElementById("btn");
+    //click事件在冒泡阶段触发
+    // btn.addEventListener('click', msg.handleBtnClick1, false);
+    // btn.addEventListener('click', msg.handleBtnClick2, false);
+    // btn.attachEvent("onclick", msg.handleBtnClick1);
+    // btn.attachEvent("onclick", msg.handleBtnClick2);
+    // btn.removeEventListener('click', msg.handleBtnClick, false);
+    var EventUtils = {
+      addHandler: function (el, type, handler) {
+        if (el.addEventListener) {
+          el.addEventListener(type, handler, false);
+        } else if (el.attachEvent) {
+          el.attachEvent('on' + type, handler);
+        } else {
+          el['on' + type] = handler;
+        }
+      },
+      removeHanlder: function (el, type, handler) {
+        if (el.removeEventListener) {
+          el.removeEventListener(type, handler, false);
+        } else if (el.detachEvent) {
+          el.detachEvent('on' + type, handler);
+        } else {
+          el['on' + type] = null;
+        }
+      },
+      getEvent: function (event) {
+        return event ? event : window.event;
+      },
+      getTarget: function (event) {
+        return event.target || event.srcElement;
+      },
+      preventDefault: function (event) {
+        if (event.preventDefault) {
+          event.preventDefault();
+        } else {
+          event.returnValue = false;
+        }
+      },
+      stopPropagation: function (event) {
+        if (event.stopPropagation) {
+          event.stopPropagation();
+        } else {
+          event.cancelBubble = true;
+        }
+      }
+    }
+    EventUtils.addHandler(btn, 'click', msg.handleBtnClick1);
+
+    var p = document.getElementById("p");
+    var handle = function (event) {
+      switch (event.type) {
+        case "click":
+          alert('p is clicked');
+          break;
+        case "mouseover":
+          event.target.style.background = "red";
+          break;
+        case "mouseenter":
+          event.target.style.background = "blue";
+          break;
+        case "mouseout":
+          event.target.style.background = "inherit";
+          break;
+      }
+      event.stopPropagation();
+    };
+    EventUtils.addHandler(p, 'click', handle);
+    // EventUtils.addHandler(p, 'mouseover', handle);
+    EventUtils.addHandler(p, 'mouseout', handle);
+    EventUtils.addHandler(p, 'mouseenter', handle);
+
+    var baidu = document.getElementById("baidu");
+    EventUtils.addHandler(baidu, 'click', function (e) {
+      console.log(event.preventDefault());
+    });
+    EventUtils.addHandler(document.body, 'click', function (e) {
+      console.log(e)
+      console.log('body clicked');
+    })
+    document.body.onmousewheel = function (event) {
+      event = event || window.event;
+      console.dir(event.wheelDelta);
+    };
+  </script>
+</body>
+
+</html>

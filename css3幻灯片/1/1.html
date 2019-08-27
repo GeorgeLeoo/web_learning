@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3幻灯片</title>
+    <style type="text/css" media="screen">
+        .items {
+            width: 280px;
+            height: 150px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+            border-radius:10px;
+            background-size: cover;
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            background-repeat: no-repeat;
+            -webkit-animation: slider 15s linear infinite alternate;
+            animation: slider 15s linear infinite alternate;
+            -webkit-transform-origin: center center;
+            transform-origin: center center;
+
+        }
+
+
+
+        @-webkit-keyframes slider {
+            0% {
+                background-image: url(http://iph.href.lu/400x300?bg=FFDAB9) ;
+            }
+            25% {
+                background-image: url(http://iph.href.lu/400x300?bg=FF4040) ;
+
+            }
+            50% {
+                background-image: url(http://iph.href.lu/400x300?bg=9400D3) ;
+
+            }
+            75% {
+                background-image: url(http://iph.href.lu/400x300?bg=8B7355);
+
+            }
+            100% {
+                background-image: url(http://iph.href.lu/400x300?bg=87CEEB);
+
+            }
+        }
+        @keyframes slider {
+            0% {
+                background-image: url(http://iph.href.lu/400x300?bg=FFDAB9) ;
+
+            }
+            25% {
+                background-image: url(http://iph.href.lu/400x300?bg=FF4040) ;
+
+            }
+            50% {
+                background-image: url(http://iph.href.lu/400x300?bg=9400D3) ;
+
+            }
+            75% {
+                background-image: url(http://iph.href.lu/400x300?bg=8B7355);
+
+            }
+            100% {
+                background-image: url(http://iph.href.lu/400x300?bg=87CEEB);
+
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+<div class="slider">
+    <div class="items"></div>
+</div>
+</body>
+
+</html>

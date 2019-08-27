@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>4_模版解析_事件指令</title>
+</head>
+
+<body>
+  <h3>模版解析：事件指令解析</h3>
+  <ol>
+    <li>从指令名中取出事件名</li>
+    <li>根据指令的值（表达式）从methods中得到对应事件处理函数对象</li>
+    <li>给当前元素结点绑定指定事件名和回调函数的dom事件监听</li>
+    <li>指令解析完后，移除此指令属性</li>
+  </ol>
+  <div id="app">
+    <p>{{name}}</p>
+    <button v-on:click="show">hint</button>
+  </div>
+
+  <script src="js/compile.js"></script>
+  <script src="js/observer.js"></script>
+  <script src="js/watcher.js"></script>
+  <script src="js/mvvm.js"></script>
+  <script>
+    new MVVM({
+      el:'#app',
+      data:{
+        name:'GeorgeLeoo'
+      },
+      methods:{
+        show(){
+          console.log(this.name)
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

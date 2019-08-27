@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>获得视口的尺寸</title>
+</head>
+<body>
+
+</body>
+<script>
+    function getViewportSize(w) {
+        w = w || window;
+
+        //IE9以及标准浏览器 使用此方法
+        if ('innerHeight' in w) {
+            return {
+                width: w.innerWidth,
+                height: w.innerHeight
+            };
+        }
+
+        var d = w.document;
+        //IE8及其以下浏览器在标准模式下
+        if (document.compatMode === 'CSS1Compat') {
+            return {
+                width: d.documentElement.clientWidth,
+                height: d.documentElement.clientHeight
+            };
+        }
+
+        //IE8及其浏览器在怪癖模式下
+        return {
+            width: d.body.clientWidth,
+            height: d.body.clientHeight
+        }
+    }
+
+    window.onresize = function () {
+        var r = getViewportSize(window);
+        console.log(r);
+    }
+</script>
+</html>

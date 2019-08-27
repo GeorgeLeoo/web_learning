@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #test {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 200px;
+      height: 200px;
+      border: 10px solid;
+      border-image-source: url('./a.jpg');
+      border-image-slice: 100 fill;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="test">
+    <img width="200" height="200" src="./b.jpg" alt="">
+  </div>
+</body>
+
+</html>

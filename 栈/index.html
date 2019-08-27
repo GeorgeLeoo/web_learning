@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="Stack.js"></script>
+<script>
+    var test = (function (a) {
+        this.a = a;
+        return function b() {
+            return this.a + b;
+        }
+    }(function (a, b) {
+        return a
+    }(1, 2)));
+    console.log(test(4))
+</script>
+</body>
+</html>

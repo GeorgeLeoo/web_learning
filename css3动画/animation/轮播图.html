@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .img-group {
+            height: 454px;
+            padding: 0;
+            position: relative;
+            animation-name: move;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-fill-mode: backwards;
+        }
+
+        .img-group li {
+            list-style: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        a {
+            display: inline-block;
+        }
+
+        .img-group .img2 {
+            left: 600px;
+        }
+
+        .img-group .img3 {
+            left: 1200px;
+        }
+
+        .img-group .img4 {
+            left: 1800px;
+        }
+
+        .img-group .img5 {
+            left: 2400px;
+        }
+
+        @keyframes move {
+            0%, 25% {
+                left: 0;
+            }
+            25%, 50% {
+                left: -600px;
+            }
+            50%, 75% {
+                left: -1200px;
+            }
+            75%, 99.9999% {
+                left: -1800px;
+            }
+            99.9999%, 100% {
+                left: -2400px;
+            }
+
+        }
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background: blue;
+        }
+
+        .dot-group {
+            position: absolute;
+            left: 200px;
+            bottom: 0;
+            z-index: 9;
+        }
+
+        .dot-group li {
+            list-style: none;
+            float: left;
+            margin: 10px;
+        }
+
+        .d {
+            animation-name: movedot;
+            animation-iteration-count: infinite;
+            animation-duration: 5s;
+            animation-fill-mode: backwards;
+            /*animation-delay: 1s;*/
+            position: absolute;
+            left: 70px;
+            top: 14px;
+        }
+
+        .d0 .dot {
+            background-color: white;
+        }
+
+        @keyframes movedot {
+            0%, 25% {
+                left: 70px;
+                /*background-color: white;*/
+            }
+            25%, 50% {
+                left: 100px;
+                /*background-color: white;*/
+            }
+            50%, 75% {
+                left: 130px;
+                /*background-color: white;*/
+            }
+            75%, 100% {
+                left: 160px;
+                /*background-color:  white;*/
+            }
+            99.9999%, 100% {
+                left: 70px;
+                /*background-color: white;*/
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <ul class="img-group">
+        <li class="img1"><a href="javascript:;"><img width="600" src="http://iph.href.lu/400x301?bg=FFDAB9" alt="pic1"></a>
+        </li>
+        <li class="img2"><a href="javascript:;"><img width="600" src="http://iph.href.lu/400x302?bg=FF4040" alt="pic2"></a>
+        </li>
+        <li class="img3"><a href="javascript:;"><img width="600" src="http://iph.href.lu/400x303?bg=9400D3" alt="pic3"></a>
+        </li>
+        <li class="img4"><a href="javascript:;"><img width="600" src="http://iph.href.lu/400x304?bg=8B7355" alt="pic4"></a>
+        </li>
+        <li class="img5"><a href="javascript:;"><img width="600" src="http://iph.href.lu/400x301?bg=FFDAB9" alt="pic1"></a>
+        </li><!-- 克隆第一张 -->
+    </ul>
+    <ul class="dot-group">
+        <li class="d0"><span class="dot d"></span></li>
+        <li><span class="dot d1"></span></li>
+        <li><span class="dot d2"></span></li>
+        <li><span class="dot d3"></span></li>
+        <li><span class="dot d4"></span></li>
+        <!--<li><span class="dot d5"></span></li>-->
+    </ul>
+</div>
+</body>
+</html>

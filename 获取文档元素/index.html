@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="p" name='pa' class="pp">1span <span>ss</span> <i>sd</i></p>
+	<p name='pa'>2</p>
+	<p name='p' class="pp">3</p>
+	<form action="" name="forms">4</form>
+	<img name="imgs" src="" alt="">
+	<a href="dsads" class="pp anchor">5</a>
+	<p name='p' class="pp">6</p>
+	<p name='p' class="pp">7</p>
+</body>
+<script type="text/javascript">
+	var p1 = document.getElementById('p');
+	console.log(p1);
+	var ps = document.getElementsByName('pa');
+	console.log(ps);
+	var p = document.getElementsByName('p');
+	console.log(p);
+	// 不建议使用document.name,即对象自动创建的属性，推荐使用getElementsByName()
+	console.log(document.forms);
+	console.log(document.imgs);
+	//
+	var pTag = document.getElementsByTagName('p');
+	console.log(pTag);
+	var imgTag = document.getElementsByTagName('img');
+	console.log(imgTag);
+	console.log(pTag.item(1));
+	console.log(ps.item(0));
+	var snapshot = Array.prototype.slice.call(ps, 0);
+	console.log(snapshot);
+	console.log(document.getElementsByClassName('anchor pp'));
+
+	console.log(document.querySelectorAll("#p"));
+
+	console.log(document.querySelector(".pp"));
+
+	console.log(pTag[0].parentNode);
+	console.log(pTag[0].childNodes);
+	console.log(pTag[0].firstChild);
+	console.log(pTag[0].lastChild);
+	console.log(pTag[0].nextSibling);
+	console.log(pTag[0].previoursSibling);
+
+	console.log(document.nodeType);
+	console.log(document.body.nodeType);
+	console.log(pTag[0].nodeName);
+	console.log(document.body.firstChild.nextSibling.nextSibling.nextSibling);
+	console.log(p1.children);
+	console.log(p1.childNodes);
+	console.log(p1.firstElementChild);
+	console.log(p1.lastElementChild);
+
+	console.log(document.querySelectorAll('a')[0].href);
+	console.log(document.querySelectorAll('a')[0].getAttribute('href'));
+</script>
+</html>

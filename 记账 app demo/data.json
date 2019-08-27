@@ -1,0 +1,41 @@
+[
+  {
+    "del": 0,
+    "_id": "5cd1893280cee55a63229870",
+    "date": "2019-05-05",
+    "getWeek": "周日",
+    "iconSelected": 0,
+    "notes": "话费",
+    "money": 30,
+    "tel": "18921483103",
+    "type": 0,
+    "createAt": "2019-05-07T13:33:38.137Z",
+    "__v": 0
+  },
+  {
+    "del": 0,
+    "_id": "5cd3c49267afc305ef457a7b",
+    "date": "2019-05-09",
+    "getWeek": "周四",
+    "iconSelected": 11,
+    "notes": "java",
+    "money": 100,
+    "tel": "18921483103",
+    "type": 0,
+    "createAt": "2019-05-09T06:11:30.777Z",
+    "__v": 0
+  },
+  {
+    "del": 0,
+    "_id": "5cd69dfd42d62e1a46348b75",
+    "date": "2019-05-11",
+    "getWeek": "周六",
+    "iconSelected": 0,
+    "notes": "e3",
+    "money": 123,
+    "tel": "18921483103",
+    "type": 0,
+    "createAt": "2019-05-11T10:03:41.033Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3_模版解析_表达式</title>
+</head>
+
+<body>
+  <h3>模版解析基本流程</h3>
+  <ol>
+    <li>将el的所有子节点取出，添加到一个空的fragment对象中</li>
+    <li>对fragment中的所有层次结点递归进行编译解析处理
+      <ul>
+        <li>对表达式文本结点进行解析</li>
+        <li>
+          对元素结点的指令属性进行解析
+          <ul>
+            <li>事件指令解析</li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li></li>
+  </ol>
+  <div id="app">
+    <p>{{name}}</p>
+  </div>
+
+  <script src="js/compile.js"></script>
+  <script src="js/observer.js"></script>
+  <script src="js/watcher.js"></script>
+  <script src="js/mvvm.js"></script>
+  <script>
+    new MVVM({
+      el:'#app',
+      data:{
+        name:'GeorgeLeoo'
+      }
+    });
+  </script>
+</body>
+
+</html>

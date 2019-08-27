@@ -1,0 +1,15 @@
+{
+  "name": "es6_babel_browserify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "babel js/src -d js/build browserify js/build/main.js -o js/dist/bundle.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

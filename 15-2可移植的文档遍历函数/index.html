@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+	
+	
+	<script>
+		function patent(e, n) {
+			if (n === undefined) {
+				n=1;
+			}
+			while(n-- && e) {
+				e = e.parentNode;
+			}
+			if (!e || e.nodeType != 1) {
+				return null;
+			}
+			return e;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+    <style>
+        .banner {
+            width: 600px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+<div id="banner" class="banner"></div>
+
+<script src="carousel.js"></script>
+<script>
+    let res = [
+        {
+            url: "http://iph.href.lu/400x300?bg=FFDAB9",
+        },
+        {
+            url: "http://iph.href.lu/400x300?bg=FF4040",
+        },
+        {
+            url: "http://iph.href.lu/400x300?bg=9400D3",
+        },
+        {
+            url: "http://iph.href.lu/400x300?bg=8B7355",
+        },
+        {
+            url: "http://iph.href.lu/400x300?bg=87CEEB",
+        },
+    ];
+
+    let options = {
+        id: "banner",
+        data: res,
+        intervalTime: 500
+    };
+    new Carousel(options);
+</script>
+</body>
+</html>

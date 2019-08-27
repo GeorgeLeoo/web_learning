@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>random</title>
+	<style>
+		html{
+			color: #fff;
+			background: #e76345;
+		}
+		.wrapper{
+			/*width: 600px;*/
+			margin: 100px auto;
+		}
+		.left{
+			float: left;
+			width: 400px;
+			text-align: center;
+			display: -webkit-box;
+		    -webkit-box-orient: vertical;
+		    -webkit-box-pack: center;
+		}
+		.right{
+			/*float: right;
+			width: 300px;*/
+		}
+		.start{
+			background: #f29807;
+		    width: 150px;
+		    text-decoration: none;
+		    display: inline-block;
+		    color: #fff;
+		    text-align: center;
+		    margin: 0 10px;
+		    cursor: pointer;
+		    line-height: 40px;
+		}
+		.inner{
+			/*width: 600px;*/
+			/*margin: 0 auto;*/
+			/*max-width: 400px;*/
+			min-width: 200px;
+			height: 400px;
+			position: absolute;
+		    top: 20%;
+		    bottom: 20%;
+		    left: 20%;
+		    right: 20%;
+		    background: rgba(0,0,0,.6);
+		    padding: 20px;
+		    border-radius: 5px;
+		    padding-right: 260px;
+		    display: flex;
+		}
+		.luck-user{
+			position: absolute;
+		    right: 20px;
+		    top: 20px;
+		    bottom: 20px;
+		    width: 240px;
+		    background-color: rgba(255,255,255,.2);
+		    border-radius: 5px;
+		    padding: 10px;
+		}
+		.luck-user-title{
+			text-align: center;
+		    line-height: 40px;
+		    color: #f5b43a;
+		    font-weight: 700;
+		    margin: 0;
+		}
+		.luck-user-title::before {
+		    position: absolute;
+		    content: "";
+		    top: 50px;
+		    left: 0;
+		    width: 100%;
+		    background: -webkit-linear-gradient(left,rgba(248,215,59,0),#f0d03a,rgba(248,215,59,0));
+		    height: 1px;
+		}
+		.luck-user-list{
+			list-style-type: none;
+		    padding: 0 20px;
+		    margin: 0;
+		    overflow-y: scroll;
+		    position: absolute;
+		    top: 50px;
+		    bottom: 70px;
+		    width: 200px;
+		    height: 340px;
+		    margin-bottom: 10px;
+		    margin-top: 10px;
+		}
+		.luck-user-list>li{
+			margin-top: 10px;
+    		position: relative;
+		}
+		.start{
+			margin-top: 10px;
+		}
+		#name{
+			font-size: 50px;
+			font-weight: bold;
+		}
+		.in{
+			margin-top: 10px;
+		}
+		.in>input{
+			width: 50px;
+			background: none;
+			border: none;
+			color: #fff;
+			background-color: rgba(255,255,255,.2);
+			padding: 6px;
+			outline: none;
+			border-radius: 3px;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="inner">
+			<div class="left">
+				<div>
+					<span id="name"></span>
+				</div>				
+				<div>
+					<a id="start" class="start">开始</a>
+				</div>
+				<div class="in">
+					抽取：<input type="text" id="total" value="9">
+				</div>	
+			</div>
+			<div class="right luck-user">
+				<p class="luck-user-title">中奖名单</p>
+				<ul id="list" class="luck-user-list">
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script>
+		(function(){
+
+			function randomNum(min,max){
+				return parseInt(Math.random()*(max-min+1)+min,10);
+			}
+
+			var max = 39;
+			var min = 1;
+
+			var names = ["准备",
+						"蔡婷缘","曹佳颖","陈季伟","陈王昆","陈真杰","戴国防","邓笑笑","董坡","费玉杰","郭平",
+						"侯佳楠","胡亚军","康宁宁","李毛妮","李思诚","刘兴","刘义","刘震","陆启明",
+						"吕修晴","茆迪","缪晨香","钱立金","沈同耀","孙通","汪代维","王梦如","王蓉蓉","魏琳",
+						"奚凯凯","肖天明","杨胜男","杨振","张雷","张文晨","章丁","周勇捷","朱贵元","左玉胜"];
+			
+			var luckUsers=[];
+
+			var name = document.getElementById("name");
+			name.innerHTML = names[0];
+
+			var start = document.getElementById("start");
+			var timer;
+
+			var list = document.getElementById("list");
+
+			start.onclick = function(e){
+				if(e.target.innerHTML === "开始"){
+					start.innerHTML = "停止";
+					timer = setInterval(function(){
+						var n = names[randomNum(min,max)];
+						name.innerHTML = n;
+					},50);
+				}else if(e.target.innerHTML === "停止"){
+					var total = document.getElementById("total").value;
+					start.innerHTML = `自动抽取中（${total}）`;
+						var flg = true;
+						setInterval(function(){
+							setTimeout(function(){
+								clearInterval(timer);
+								var names = name.innerHTML;
+								if(luckUsers.indexOf(names)===-1){
+									luckUsers.push(names);
+									var li = document.createElement('li');
+									li.innerHTML = names;
+									list.appendChild(li);
+									start.innerHTML = `自动抽取中（${parseInt(total)-luckUsers.length}）`;
+								}
+								if(luckUsers.length===(parseInt(total)-1)){
+									clearInterval(timer);
+									flg=false;
+								}
+							},2000);
+							if(flg){
+								setTimeout(function(){
+								timer = setInterval(function(){
+									var n = names[randomNum(min,max)];
+									name.innerHTML = n;
+								},50);
+							},3000);
+							}
+						},3000);
+					
+					
+				}
+			}
+			
+
+		})();
+	</script>
+</body>
+</html>

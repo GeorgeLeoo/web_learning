@@ -1,0 +1,15 @@
+.swiper{
+	position: relative;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.swiper-container{
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.swiper-item{
+
+}

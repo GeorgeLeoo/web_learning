@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            margin: 0 auto;
+            background: rebeccapurple;
+            border-radius: 10px;
+            color: white;
+            width: 200px;
+            padding: 50px;
+            cursor: pointer;
+            transition: width 2s cubic-bezier(0.1, 0.7, 1.0, 0.1) .1s;
+            outline: none;
+            /*transition: width 2s steps(2.0, end) .1s;*/
+            /*transition: width 2s steps(start 3) .1s;*/
+            /*transition: width 2s step-end .1s;*/
+            /*transition: width 2s step-start .1s;*/
+        }
+
+        .box:focus {
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <p class="box" tabindex="1">
+        Hover to see
+        the transition.
+    </p>
+</div>
+</body>
+</html>
