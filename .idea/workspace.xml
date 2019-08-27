@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="02a5f231-6d84-4a31-816b-298c123f9d37" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/public/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/commonStyle/common.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/commonStyle/variable.styl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/components/AddAccountDialog.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/pages/AccountManagement.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/pages/B.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/pages/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/pages/LoginRegister.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/store/state.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/AlertTip/AlterTip.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/CartControl/CartControl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Food/Food.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopCart/ShopCart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopHeader/ShopHeader.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/Star.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_half@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_half@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_off@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_off@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_on@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star24_on@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_half@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_half@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_off@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_off@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_on@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star36_on@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_half@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_half@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_off@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_off@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_on@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/Star/images/star48_on@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/mock/data.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/mock/mockServer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Shop/Shop.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Shop/ShopGoods/ShopGoods.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Shop/ShopInfo/ShopInfo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Shop/ShopRatings/ShopRatings.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/getters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/mutation-types.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/store/state.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/build/webpack.base.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/build/webpack.base.conf.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/api/ajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/api/ajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/components/HeaderTop/HeaderTop.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/HeaderTop/HeaderTop.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopList/ShopList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopList/ShopList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopList/images/shop_back.svg" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/components/ShopList/images/shop_back.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Login/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Login/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/MSite/MSite.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/MSite/MSite.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Profile/Profile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/pages/Profile/Profile.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/硅谷外卖/elm/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/硅谷外卖/elm/src/router/index.js" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="CSS File" />
+        <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/硅谷外卖/elm" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="ProjectId" id="1OzvbHgKKPcaanC4WtQoptz6OZt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/chrome插件/todo/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/chrome插件/todo/img" />
+      <recent name="$PROJECT_DIR$/chrome插件/1" />
+      <recent name="$PROJECT_DIR$/vuex源码/source" />
+      <recent name="$PROJECT_DIR$/vuex源码" />
+      <recent name="$PROJECT_DIR$/vue-admin/vue-admin/shortscreen" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/public" />
+      <recent name="$PROJECT_DIR$/vue-admin/vue-admin/vue-admin/src" />
+      <recent name="$PROJECT_DIR$/vue-admin/vue-admin" />
+      <recent name="$PROJECT_DIR$/硅谷外卖/gshop-client/src/pages/Shop" />
+      <recent name="$PROJECT_DIR$/硅谷外卖/gshop-client/src/components/Star" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.popup.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn/布局/两栏布局/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="popup.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/learn/chrome插件/todo/popup.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Generator.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="Generator.js" working-dir="$PROJECT_DIR$/ECMAScript">
+      <method v="2" />
+    </configuration>
+    <configuration name="equal.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="equal.js" working-dir="$PROJECT_DIR$/equal">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="index.js" working-dir="$PROJECT_DIR$/vuex源码/source">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="JavaScript Debug.popup.html" />
+      <item itemvalue="Node.js.Generator.js" />
+      <item itemvalue="Node.js.index.js" />
+      <item itemvalue="Node.js.equal.js" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.popup.html" />
+        <item itemvalue="Node.js.equal.js" />
+        <item itemvalue="Node.js.index.js" />
+        <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.Generator.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02a5f231-6d84-4a31-816b-298c123f9d37" name="Default Changelist" comment="" />
+      <created>1549779218337</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549779218337</updated>
+      <workItem from="1549779219554" duration="48820000" />
+      <workItem from="1550384298422" duration="7107000" />
+      <workItem from="1551183967709" duration="1872000" />
+      <workItem from="1551451728069" duration="496000" />
+      <workItem from="1552366940555" duration="1826000" />
+      <workItem from="1552913117329" duration="14000" />
+      <workItem from="1555397863823" duration="765000" />
+      <workItem from="1555837346110" duration="623000" />
+      <workItem from="1557058424488" duration="5856000" />
+      <workItem from="1557232634116" duration="832000" />
+      <workItem from="1557902110569" duration="11000" />
+      <workItem from="1557902135362" duration="7432000" />
+      <workItem from="1557978591733" duration="3363000" />
+      <workItem from="1558270820799" duration="1174000" />
+      <workItem from="1558530199284" duration="1606000" />
+      <workItem from="1559398823169" duration="5000" />
+      <workItem from="1563370360770" duration="1589000" />
+      <workItem from="1564925552483" duration="828000" />
+      <workItem from="1564990603502" duration="1088000" />
+      <workItem from="1564991753213" duration="840000" />
+      <workItem from="1564992885029" duration="35000" />
+      <workItem from="1564992946211" duration="112000" />
+      <workItem from="1564993316728" duration="756000" />
+      <workItem from="1564994088137" duration="13185000" />
+      <workItem from="1565078236931" duration="57533000" />
+      <workItem from="1565500121191" duration="599000" />
+      <workItem from="1565500735252" duration="13030000" />
+      <workItem from="1565597440512" duration="100000" />
+      <workItem from="1565698282715" duration="6424000" />
+      <workItem from="1565838159248" duration="60000" />
+      <workItem from="1565838233896" duration="15481000" />
+      <workItem from="1566051800185" duration="4474000" />
+      <workItem from="1566101978872" duration="2086000" />
+      <workItem from="1566107778670" duration="3605000" />
+      <workItem from="1566187968410" duration="35380000" />
+      <workItem from="1566451723767" duration="267000" />
+      <workItem from="1566452008719" duration="9307000" />
+      <workItem from="1566547658654" duration="9000" />
+      <workItem from="1566616340415" duration="6237000" />
+      <workItem from="1566714342228" duration="448000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/ts/first/first.js" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/equal/equal.js</url>
+          <line>18</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/equal/equal.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
