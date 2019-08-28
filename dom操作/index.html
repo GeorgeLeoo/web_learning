@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .red {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bx dd cc" id="box">
+    <p id="p1" class="p1">p1</p>
+    <p id="p2" class="p2">p2</p>
+    <p id="p3" class="p3">p3</p>
+  </div>
+
+  <script src="./js/Utils.js"></script>
+  <script>
+
+    let list = Utils.getSiblings('#p2');
+    // Utils.addClassName(list,'red')
+    Utils.addCss(list, { color: 'red' })
+
+
+    // let p = document.querySelector('#p2');
+    // console.log();
+
+    // let child = Utils.createElement('div', null, 'ddddd')
+    // let addNode = Utils.createElement('div', {
+    //   className: ['a', 'b'],
+    //   index: 21,
+    //   css: { color: 'red', fontSize: '30px' },
+    //   dataset: {
+    //     id: 2,
+    //     text: 'text111'
+    //   }
+    // }, 'child');
+    // console.log(addNode);
+
+    // Utils.addLast(document.body, addNode);
+
+    // console.log(Utils.getCss(addNode, 'color'));
+
+  </script>
+</body>
+
+</html>
