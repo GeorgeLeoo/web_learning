@@ -15,18 +15,23 @@
 
 <body>
 
-  <div class="bx dd cc" id="box">
-    <p id="p1" class="p1">p1</p>
-    <p id="p2" class="p2">p2</p>
-    <p id="p3" class="p3">p3</p>
+  <div id="box">
+    <p id="p1"><span id="s1">p1</span></p>
+    <p id="p2">p2</p>
+    <p id="p3">p3</p>
   </div>
 
   <script src="./js/Utils.js"></script>
   <script>
 
-    let list = Utils.getSiblings('#p2');
+    let box = document.querySelector('#box');
+    console.log(box.children);
+    console.log(box.childElementCount);
+
+
+    // let list = Utils.getSiblings('#p2');
     // Utils.addClassName(list,'red')
-    Utils.addCss(list, { color: 'red' })
+    // Utils.addCss(list, { color: 'red' })
 
 
     // let p = document.querySelector('#p2');

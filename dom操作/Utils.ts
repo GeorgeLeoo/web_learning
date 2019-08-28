@@ -271,9 +271,9 @@ class Utils {
 
   static getParent(el: any) {
     if (typeof el === 'string' || el === null) {
-      return document.querySelector(el).parentElement;
+      return document.querySelector(el).parentNode;
     } else {
-      return el.parentElement;
+      return el.parentNode;
     }
   }
 

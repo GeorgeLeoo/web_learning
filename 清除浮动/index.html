@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="">
+  <style>
+    .wrap{
+      background: red;
+      overflow: hidden;
+      zoom: 1;
+    }
+    .box{
+      float: left;
+      width: 100px;
+      height: 100px;
+      background: darkviolet;
+    }
+    .box:nth-of-type(1){
+      background: burlywood!important;
+    }
+    .box:nth-of-type(2){
+      background: rgb(0, 186, 171);
+    }
+    /* .wrap::after{
+      content: '';
+      clear: both;
+      display: block;
+    } */
+
+    .fs-12{
+      font-size: 12px;
+    }
+
+    .fs-14{
+      font-size: 14px;
+    }
+
+    .fs-16{
+      font-size: 16px;
+    }
+
+    .fs-18{
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="box" style="background: beige"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <div style="clear: both"></div> -->
+  </div>
+</body>
+</html>
